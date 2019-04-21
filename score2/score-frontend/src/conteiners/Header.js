@@ -5,8 +5,13 @@ export class Header extends Component {
 
     render(){
         return(
-            <div>
-               <Link to='/'>Главная</Link>  <Link to='/credit/'>Подать заявку</Link> 
+            <div className='container-fluid headerWrap'>
+            <div className='container header'>
+               <Link to='/' className="menuItem">Главная</Link>
+               <Link to='/credit/' className="menuItem">Подать заявку</Link> 
+               <Link to='/analisis/' className="menuItem">Анализ</Link>
+               <Link to='/settings/' className="menuItem">Настройки</Link>  
+               </div>
             </div>
         )
     }
